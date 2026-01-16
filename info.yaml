@@ -1,7 +1,7 @@
 project:
-  title: "NAND"
+  title: "NAND Gate"
   author: "Taghreed EialSalman"
-  description: "2-input NAND gate"
+  description: "2-input NAND gate implemented using TinyTapeout"
   language: "Verilog"
   clock_hz: 0
   tiles: "1x1"
