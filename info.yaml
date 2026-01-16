@@ -5,9 +5,9 @@ project:
   language: "Verilog"
   clock_hz: 0
   tiles: "1x1"
-  top_module: "tt_um_<github>_nand"
+  top_module: "tt_um_taghreed_eialsalman_nand"
   source_files:
-    - "tt_um_<github>_nand.v"
+    - "tt_um_taghreed_eialsalman_nand.v"
 
 pinout:
   ui[0]: "A"
