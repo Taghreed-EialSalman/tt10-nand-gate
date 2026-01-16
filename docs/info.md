@@ -1,20 +1,25 @@
-<!---
+# NAND Gate
 
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
+## Project Overview
+This project implements a **2-input NAND gate** using the TinyTapeout open-source ASIC flow.
+The design is written in Verilog and verified using cocotb-based simulation before GDS generation.
 
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
+## Functionality
+The NAND gate outputs logic LOW only when both inputs are HIGH.  
+For all other input combinations, the output is HIGH.
 
-## How it works
+## Inputs and Outputs
+- **Inputs**
+  - A (ui[0])
+  - B (ui[1])
 
-Explain how your project works
+- **Output**
+  - Y = ~(A & B) (uo[0])
 
-## How to test
+## Design Notes
+- The design is purely combinational.
+- No clock is required.
+- Unused inputs and outputs are safely tied off.
 
-Explain how to use your project
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+## Author
+Taghreed EialSalman
