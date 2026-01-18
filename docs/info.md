@@ -14,8 +14,6 @@ The circuit has:
 The output **F** is logic `0` only when **both A and B are logic `1`**.  
 For all other input combinations, the output **F** is logic `1`.
 
----
-
 ## How to test
 
 Apply all combinations of inputs **A** and **B** and verify the output **F** using the NAND truth table.
@@ -28,8 +26,6 @@ Apply all combinations of inputs **A** and **B** and verify the output **F** usi
 | 1 | 1 | 0 |
 
 Each input combination should be held stable for several clock cycles (for example, 25 cycles) before checking the output.
-
----
 
 ## External hardware
 
