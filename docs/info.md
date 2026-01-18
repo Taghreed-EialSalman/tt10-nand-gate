@@ -1,25 +1,36 @@
-# NAND Gate
+## How it works
 
-## Project Overview
-This project implements a **2-input NAND gate** using the TinyTapeout open-source ASIC flow.
-The design is written in Verilog and verified using cocotb-based simulation before GDS generation.
+This project implements a **2-input NAND logic gate**.
 
-## Functionality
-The NAND gate outputs logic LOW only when both inputs are HIGH.  
-For all other input combinations, the output is HIGH.
+The NAND gate performs the logical negation of the AND operation.  
+Its function is defined as:
 
-## Inputs and Outputs
-- **Inputs**
-  - A (ui[0])
-  - B (ui[1])
+**F = ¬(A · B)**
 
-- **Output**
-  - Y = ~(A & B) (uo[0])
+The circuit has:
+- Two inputs: **A**, **B**
+- One output: **F**
 
-## Design Notes
-- The design is purely combinational.
-- No clock is required.
-- Unused inputs and outputs are safely tied off.
+The output **F** is logic `0` only when **both A and B are logic `1`**.  
+For all other input combinations, the output **F** is logic `1`.
 
-## Author
-Taghreed EialSalman
+---
+
+## How to test
+
+Apply all combinations of inputs **A** and **B** and verify the output **F** using the NAND truth table.
+
+| A | B | F |
+|---|---|---|
+| 0 | 0 | 1 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 0 |
+
+Each input combination should be held stable for several clock cycles (for example, 25 cycles) before checking the output.
+
+---
+
+## External hardware
+
+None.
